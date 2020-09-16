@@ -1,0 +1,5 @@
+export const LogoGojek = require('./gojek.png')
+export const LogoGojekWhite = require('./gojek-white.png')
+export const LogoGopay = require('./gopay.png')
+export const LogoGopayWhite = require('./gopay-blue-white.png')
+export const LogoGofood = require('./gofood.png')
