@@ -9,41 +9,36 @@ const styles = StyleSheet.create({
     borderBottomColor: Colors.lighten,
   },
   cardContent: {
-    paddingVertical: 10,
+    paddingTop: 15,
+    paddingBottom: 10,
+    flexDirection: "row",
+    justifyContent: "space-around",
+    alignItems: "center",
   },
   cardFooter: {
     flexDirection: "row",
     justifyContent: "flex-end",
   },
-  thumbnail: {
-    position: "relative",
-    height: 200,
-  },
-  thumbnailBackground: {
-    position: "absolute",
-    top: 0,
-    left: 0,
-    width: "100%",
-    height: "100%",
-    borderRadius: 5,
-  },
-  thumbnailOverlay: {
-    position: "absolute",
-    top: 0,
-    left: 0,
-    width: "100%",
-    height: "100%",
-    borderRadius: 5,
-    backgroundColor: Colors.dark,
-    opacity: 0.6,
-  },
-  thumbnailWatermark: {
+  headerLogo: {
     height: 15,
     width: 60,
     resizeMode: "contain",
+    marginBottom: 5,
+  },
+  headerTitle: {
+    paddingLeft: 4,
+    fontSize: 18,
+    color: Colors.dark,
+    fontWeight: "bold",
+  },
+  contentImage: {
+    resizeMode: "contain",
+  },
+  content: {
+    width: "60%",
   },
   title: {
-    fontSize: 18,
+    fontSize: 16,
     color: Colors.dark,
     fontWeight: "bold",
   },
