@@ -15,33 +15,6 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     justifyContent: "flex-end",
   },
-  thumbnail: {
-    position: "relative",
-    height: 200,
-  },
-  thumbnailBackground: {
-    position: "absolute",
-    top: 0,
-    left: 0,
-    width: "100%",
-    height: "100%",
-    borderRadius: 5,
-  },
-  thumbnailOverlay: {
-    position: "absolute",
-    top: 0,
-    left: 0,
-    width: "100%",
-    height: "100%",
-    borderRadius: 5,
-    backgroundColor: Colors.dark,
-    opacity: 0.6,
-  },
-  thumbnailWatermark: {
-    height: 15,
-    width: 60,
-    resizeMode: "contain",
-  },
   title: {
     fontSize: 18,
     color: Colors.dark,

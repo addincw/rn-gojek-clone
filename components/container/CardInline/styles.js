@@ -4,9 +4,7 @@ import Colors from "../../../public/Colors";
 
 const styles = StyleSheet.create({
   card: {
-    paddingVertical: 15,
-    borderBottomWidth: 1,
-    borderBottomColor: Colors.lighten,
+    paddingVertical: 15
   },
   cardContent: {
     paddingTop: 15,

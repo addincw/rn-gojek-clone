@@ -1,42 +1,25 @@
 import React from "react";
-import { View, Text, Image, Alert } from "react-native";
+import { View, Text } from "react-native";
 
-import { LogoGojekWhite } from "../../../assets/logo";
 import PublicStyles from "../../../public/Styles";
 
 import styles from "./styles";
 
 import Button from "../../base/Button";
+import ImageOverlay from "../../base/ImageOverlay";
 
-function Card({ image }) {
-  const onPressHandler = () => {
-    Alert.alert("clicked");
-  };
-
+function Card({ image, watermark, title, content, onPress }) {
   return (
     <View style={{ ...PublicStyles.container, ...styles.card }}>
-      <View style={styles.thumbnail}>
-        <Image source={image} style={styles.thumbnailBackground} />
-        <View style={styles.thumbnailOverlay}></View>
-        <Image
-          style={{
-            marginTop: 10,
-            marginLeft: 10,
-            height: 15,
-            width: 60,
-            resizeMode: "contain",
-          }}
-          source={LogoGojekWhite}
-        />
-      </View>
+
+      <ImageOverlay source={image} watermark={watermark} />
+
       <View style={styles.cardContent}>
-        <Text style={styles.title}>Go News</Text>
-        <Text style={styles.text}>
-          Tim Jaguar Grebek Rumah untuk Ritual Santet di Depok.
-        </Text>
+        <Text style={styles.title}>{title}</Text>
+        <Text style={styles.text}>{content}</Text>
       </View>
       <View style={styles.cardFooter}>
-        <Button title="read" onPress={onPressHandler} />
+        <Button title="read" onPress={onPress} />
       </View>
     </View>
   );
